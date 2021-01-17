@@ -9,7 +9,7 @@ node{
     }
     stage('Bandit - SAST'){
         sh '''
-        python3 -m 'bandit -f html -o bandit-result.html app.py' | true
+        python3 -m bandit -f html -o bandit-result.html app.py | true
         '''
         archiveArtifacts allowEmptyArchive: true, artifacts: '**/bandit-result.html', onlyIfSuccessful: true
         publishHTML (target: [
