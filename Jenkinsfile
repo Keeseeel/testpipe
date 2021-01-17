@@ -21,5 +21,11 @@ node{
           reportName: "Bandit Report"
         ])
     }
+     stage('SNYK - SCA'){
+        snykSecurity failOnIssues: false, severity: 'medium', snykInstallation: 'snyk', snykTokenId: '6e90237f-32ee-4061-ae51-89753d100650'
+    }
+    
+    
+    
     
 }
