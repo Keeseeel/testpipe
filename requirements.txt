@@ -1,2 +1,2 @@
-Flask
+Flask==0.0.1
 PyYAML==3.13
