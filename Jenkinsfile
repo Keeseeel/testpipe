@@ -4,7 +4,7 @@ node{
     }   
     stage('Install tools'){
         sh '''
-        pip3 install bandit safety
+        pip3 install bandit
         '''
     }
     stage('Bandit - SAST'){
