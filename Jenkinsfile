@@ -1,6 +1,6 @@
 node{ 
     stage('Git Pull'){
-        git url: 'https://github.com/we45/Vulnerable-Flask-App.git'
+        git url: 'https://github.com/Keeseeel/testpipe.git'
     }   
     stage('Install tools'){
         sh '''
