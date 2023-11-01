@@ -1,3 +1,4 @@
 Flask==0.5
 PyYAML==5.4
 Django==1.10
+werkzeug>=3.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
